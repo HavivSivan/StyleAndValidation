@@ -29,6 +29,8 @@ namespace StyleAndValidation.Services
         }
         public async Task<bool> Login(string username, string password)
         {
+            if (username == null || password == null)
+                return false;
             loggedUser = null;
             loggedUser= users.FirstOrDefault(x=>x.Username == username&&x.Password==password);
             await Task.Delay(1000); 

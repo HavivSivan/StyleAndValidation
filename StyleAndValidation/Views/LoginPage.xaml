@@ -7,7 +7,13 @@
     Title="התחברות"
     x:DataType="viewmodels:LoginPageViewModel"
     Shell.PresentationMode="ModalAnimated">
-
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button" ApplyToDerivedTypes="True">
+                <Setter Property="CornerRadius" Value="25"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <!--  ניטרול כפתור חזרה  -->
     <Shell.BackButtonBehavior>
         <BackButtonBehavior IsVisible="False" />

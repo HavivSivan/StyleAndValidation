@@ -64,6 +64,9 @@
         <!--  FullName  -->
         <Label Style="{StaticResource lblStyle}" Text="Full Name" />
         <Entry Style="{StaticResource entStyle}" Text="{Binding FullName}" />
+        <!--BirthDate-->
+        <Label Style="{StaticResource lblStyle}" Text="Date Of Birth"/>
+        <Entry Style="{StaticResource entStyle}" Text="{Binding BirthDate}"/>
         <!--  Email  -->
         <Label Style="{StaticResource lblStyle}" Text="Email" />
         <Entry
